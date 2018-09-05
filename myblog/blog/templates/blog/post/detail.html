@@ -1,0 +1,26 @@
+{% extends "blog/post/index.html" %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+<h1>{{ post.title }}</h1>
+<p class="date">
+Published {{ post.publish }} by {{ post.author }}
+</p>
+
+<div class="content-markdown">
+  <p class ="blog_content_paragraph">{{ post.body }}</p>
+</div>
+<script>
+  window.addEventListener("load", function(event) {
+    var x=document.getElementsByClassName('content-markdown')[0].getElementsByTagName('img');
+    var t;
+    for(t=0;t<x.length;t++){
+      if(x[t].width>700){
+      x[t].width=700
+      }
+      if(x[t].height>700){
+      x[t].height=700
+      }
+    }
+  });
+</script>
+{% endblock %}
