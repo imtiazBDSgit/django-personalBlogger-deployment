@@ -127,5 +127,5 @@ STATICFILES_DIRS = [
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'imtiaz.khan.engg@gmail.com'
-EMAIL_HOST_PASSWORD = 'Data@2018'
+EMAIL_HOST_PASSWORD = 'jgxxqskoqbijivta'
 EMAIL_USE_TLS = True
